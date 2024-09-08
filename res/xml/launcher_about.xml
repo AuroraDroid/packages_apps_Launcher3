@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.preference.PreferenceScreen 
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:settings="http://schemas.android.com/apk/res-auto">
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
         <PreferenceScreen
-            android:layout="@layout/euclid_logo"
+            android:layout="@layout/eucliid_logo"
             android:key="euclid_logo"
             android:selectable="false" />
 
@@ -14,91 +12,38 @@ xmlns:settings="http://schemas.android.com/apk/res-auto">
         <Preference
             android:key="about_credit01"
             android:title="Lawnchair team"
-            settings:layout="@layout/euclid_about"
             android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/LawnchairLauncher/lawnchair" />
+            android:selectable="false">
         </Preference>
 
         <Preference
             android:key="about_credit01"
             android:title="LineageOS"
-            settings:layout="@layout/euclid_about"
             android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/LineageOS/android_packages_apps_Launcher3" />
+            android:selectable="false">
         </Preference>
 
         <Preference
             android:key="about_credit01"
             android:title="Amir Zaidi (Shade Launcher)"
-            settings:layout="@layout/euclid_about"
             android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/amirzaidi/Shade" />
+            android:selectable="false">
         </Preference>
 
         <Preference
             android:key="about_credit01"
             android:title="Bootleggers ROM"
-            settings:layout="@layout/euclid_about"
             android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/BootleggersROM/packages_apps_Launcher3" />
-        </Preference>
-
-        <Preference
-            android:key="about_credit01"
-            android:title="Corvus-AOSP team"
-            settings:layout="@layout/euclid_about"
-            android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/Corvus-AOSP/android_packages_apps_Launcher3" />
+            android:selectable="false">
         </Preference>
 
         <Preference
             android:key="about_credit01"
             android:title="crDroid team"
-            settings:layout="@layout/euclid_about"
-            android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/crdroidandroid/android_packages_apps_Launcher3" />
-        </Preference>
-
-        <Preference
-            android:key="about_credit01"
-            android:title="Rizky Benggolo"
-            settings:layout="@layout/euclid_about"
-            android:persistent="false"
-            android:selectable="true">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/bananadroid/android_packages_apps_Launcher3" />
-        </Preference>
-
-        <Preference
-            android:key="about_credit01"
-            android:title="RisingOS team"
-            settings:layout="@layout/euclid_about"
             android:persistent="false"
             android:selectable="false">
-            <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/RisingTechOSS/android_packages_apps_Launcher3" />
         </Preference>
-        
+
     </PreferenceCategory>
 
 </androidx.preference.PreferenceScreen> 

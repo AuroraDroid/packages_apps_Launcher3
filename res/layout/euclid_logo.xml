@@ -12,17 +12,14 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/euclid_card"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginTop="24dp"
-    android:layout_gravity="center_vertical"
-    android:id="@+id/euclid_logo"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical">
 
     <com.android.launcher3.util.BlurWallpaperView
         android:layout_width="match_parent"
@@ -34,45 +31,36 @@ limitations under the License.
         android:scaleType="centerCrop" />
 
     <ImageView
-        android:id="@+id/euclid_logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="42dp"
-        android:layout_marginStart="36dp"
-        android:layout_centerVertical="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
         android:minWidth="48dp"
         android:src="@drawable/ic_euclid"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"/>
+        android:scaleType="centerInside" />
 
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="vertical"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="42dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="26dp"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/euclid_logo">
+        android:layout_marginTop="8dip"
+        android:singleLine="true"
+        android:text="@string/about_euclid_title"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="20sp"
+        android:fontFamily="@*android:string/config_headlineFontFamilyMedium"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
-            android:textSize="13.5sp"
-            android:textColor="?android:attr/colorAccent"
-            android:text="@string/about_app_title" />
+    <Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:singleLine="true"
+        android:text="@string/about_app_version"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="10sp"
+        android:fontFamily="@*android:string/config_headlineFontFamilyMedium"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="13dp"
-            android:textSize="12.5sp"
-            android:textColor="@color/op_control_text_color_primary"
-            android:text="@string/about_app_subtitle" />
-            
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
